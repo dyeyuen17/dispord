@@ -7,5 +7,8 @@ defmodule DispordApiWeb.Router do
 
   scope "/api", DispordApiWeb do
     pipe_through :api
+
+    resources "/users", UserController
+    resources "/conversations", ConversationController
   end
 end
