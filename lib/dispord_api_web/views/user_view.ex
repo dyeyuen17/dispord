@@ -1,5 +1,5 @@
 defmodule DispordApiWeb.UserView do
-  use DispordApi, :view
+  use DispordApiWeb, :view
 
   def render("show.json", %{users: users}) do
     %{data: render_many(users, __MODULE__, "user.json")}
